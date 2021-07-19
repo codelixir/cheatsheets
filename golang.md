@@ -35,6 +35,7 @@
 - [6. Methods](#6-methods)
   - [6.1. Pointer Receivers](#61-pointer-receivers)
   - [6.2. Methods as Functions](#62-methods-as-functions)
+- [7. Interfaces](#7-interfaces)
 
 # 1. Hello World
 
@@ -602,3 +603,26 @@ func main() {
 }
 ```
 Notice the differences in calling the functions.
+
+# 7. Interfaces
+
+An *interface type* is defined as a set of method signatures. A value of interface type can hold any value that implements those methods.
+
+```go
+type Abser interface {
+	Abs() float64
+}
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+func (v *Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+```
+
+Here, `Abser` is a set of types `MyFloat` and `*Vertex` since both of these implement the `Abs()` method. 
