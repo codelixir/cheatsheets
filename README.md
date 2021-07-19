@@ -7,7 +7,7 @@ I started this repository after I started making a cheatsheet as I was learning 
 ## Contents
 
 ### 1. [Go cheatsheet](./golang.md)
-
+(Work in Progress)
 The cheatsheet is a quick summary of the basic features provided by the Go language. At times, it refers to similar features in C/Python, so having a knowledge of those languages helps, but is not required. Although some basic level experience in programming is recommended, because it does not cover everything in-depth. So unless Go is the first language you are learning, this cheatsheet should be pretty useful for you.
 
 Most of the content has been taken from [A Tour of Go](https://tour.golang.org/), I just compiled, summarised and rearranged it.
